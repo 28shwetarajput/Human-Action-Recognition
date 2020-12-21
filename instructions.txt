@@ -1,0 +1,31 @@
+->Creating a new env 
+
+1. conda update conda
+
+2 conda create --name yourenvname 
+
+3 conda activate yourenvname
+
+conda install -c conda-forge tensorflow
+4 install additional packages with pip install -r requirements.txt
+
+5 conda deactivate
+
+6 conda info --envs // to check for all the available environments
+
+7 conda remove --name env_name --all
+
+to make a new requirements.txt file--
+conda list -e > requirements.txt
+
+->Running download.py file 
+
+python download.py //to compile and then install the necessary missing libraries using both pip and conda 
+
+pip install ffmpeg 
+conda install ffmpeg // libraries need to be installed in both conda and pip
+
+python download.py sample.csv videos --trim --num-jobs 10// to run
+
+
+-> python app.py //  to run the model 
